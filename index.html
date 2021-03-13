@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>katoyuka</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../img/favicon.ico">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link href="swiper/swiper-bundle.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>	
+<script src="swiper/swiper.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+</head>
+<body>
+	<div class="start">	
+		<p><img src="../img/logo3.svg" alt="logo" width="300px"></p>
+	</div>
+
+	<script>
+		$(function() {
+			setTimeout(function(){
+				$('.start p').fadeIn(1600);
+			},500); //0.5秒後にロゴをフェードイン!
+			setTimeout(function(){
+				$('.start').fadeOut(500);
+			},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+			setTimeout(function(){
+				$('.content_wrapper').toggleClass('farstin');
+			},2501);
+		});	
+		
+	</script>
+		<div class="content_wrapper">
+			<div class="left">
+					<div class="aboutme">
+					<p class="mylogo"><img src="../img/logo2.svg" alt="logo"></p>
+						<div class="aboutme_box">
+<!--							<p class="myname">kato yuka</p>-->
+							<img src="../img/me.png" alt="me" class="me" width="240px">
+						<p class="itsme">
+							主にweb、グラフィック、イラスト、3DCGの勉強をしています。今は新しいことを学ぶのがとても楽しいです。コーヒーが好きです。
+						</p>
+						<p class="more">
+							<a href="https://pando.life/@rol3pcgxru" target="_blank" rel="noopener noreferrer">more</a>
+						</p>
+						</div>
+						<p class="wanttodo_title">今後やりたいこと</p>
+						<p class="wanttodo">webデザインやコーディング/グラフィックデザイン/絵を描く/ボイトレに行く/ダンス/ゲームを作る/3Dモデルを作って売る/沖縄に行って写真を撮る</p>
+						<p class="mail">katospl@icloud.com</p>
+					</div>
+			</div>
+			
+			<div class="right" >
+			<div class="web box" >
+<!--				<div class="slide">いらない-->
+					<div class="work-sumb fir"><img src="../img/dozzythumb.jpg" alt="work" width="300px"></div>
+					<div class="work-sumb sec"><img src="../img/tripanywheresumb.jpg" alt="work" width="300px"></div>
+					<div class="work-sumb eig"><img src="../img/ndg-dsclsumb.png" alt="work" width="300px"></div>
+					<div class="work-sumb fift"><img src="../img/calenderthumb.jpg" alt="work" width="300px"></div>
+					<div class="work-sumb sixt"><img src="../img/lachicthumb.jpg" alt="work" width="300px"></div>
+					<div class="work-sumb fiv"><img src="../img/childthumb.jpg" alt="work" width="300px"></div>
+					<div class="work-sumb thi"><img src="../img/enginethumb.jpg" alt="work" width="300px"></div>
+<!--					<div class="work-sumb fou"><img src="../img/parfetsumb.png" alt="work" width="300px"></div>
+					<div class="work-sumb six"><img src="../img/potato.JPG" alt="work" width="300px"></div>
+-->					<div class="work-sumb sev"><img src="../img/parkthumb.jpg" alt="work" width="300px"></div>
+			</div>
+	</div>
+	<div class="popup">
+		<div class="popupbox">
+				<p class="close"><img src="../img/close.svg" alt="btn"></p>
+			<div class="popupflex">
+				<div class="swiper-container">
+				<div class="swiper-pagination"></div>
+					<div class="popupleft swiper-wrapper">
+						<p class="workbox swiper-slide workfir">
+							<img src="../img/DOZZY.png" alt="" class="workimg">
+						</p>					
+					</div>
+<!--				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+-->
+				</div>
+				<div class="popupright">
+					<p class="worktitle"></p>
+
+					<p class="worksentence"></p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+
+	
+	<script>
+		$('.fir').click(function(){
+			$('.workfir').children('img').attr('src','../img/gama.jpg'),
+			$('.worktitle').html("「蒲郡のお魚博士ポイントラリー」ポスター"),
+			$('.worksentence').html("イベントのポスターです。駅などの公共の場に貼る想定で作りました。子供が楽しめそうなイベントだったので、子供が見たら楽しそうに、大人が見たら安心できそうなビジュアルにしました。広告に3DCGを使う挑戦をしてみました。");
+			$('.workbox img').addClass('wide');
+		});
+	</script>
+	<script>
+		$('.sec').click(function(){
+			$('.workfir').children('img').attr('src','../img/tripanywhere.jpg'),
+			$('.worktitle').html("「tripanywhere」ブランディングサイト"),
+			$('.worksentence').html("架空の旅行代理店「tripanywhere」のサイトデザインとコーディングをしました。こんなサービスがあったら楽しそうという思いで作りました。どこに着くかわからないというところが特徴なので、大航海時代を意識したデザインにしました。");
+		});
+	</script>
+	<script>
+		$('.eig').click(function(){
+			$('.workfir').children('img').attr('src','../img/ndg-dscl.png'),
+			$('.popupleft').append($
+			  ('<p class="workbox swiper-slide worksec"><img src="../img/dscl-smh.png" alt="dsclsmh" class="workimg"></p>')),
+			$('.worktitle').html("「デザイナーズコレクション」サイト"),
+			$('.worksentence').html("名古屋デザイナー学院のイベント「デザイナーズコレクション」のサイトを作りました。メインビジュアルやパンフレットの画像をお借りしての制作だったので、既にある作風に似せる経験になりました。実際にサーバーを借りたので、FTPソフトの使い方の勉強にもなりました。サイトは<a href='../HTML/www_ndg-dscl/index.html' target='_blank' rel='noopener noreferrer'>こちら</a>");
+		});
+	</script>
+	<script>
+		$('.thi').click(function(){
+			$('.workfir').children('img').attr('src','../img/engine.png'),
+			$('.worktitle').html("オリジナルイラスト"),
+			$('.worksentence').html("pixiv主催のコンテスト「pixiv高校生イラストコンテスト2020」にて「TCB賞」を頂いた作品です。同コンテストでは優秀賞も頂くことができました！"),
+			$('.workbox img').addClass('wide');
+		});
+	</script>
+	<script>
+		$('.fou').click(function(){
+			$('.workfir').children('img').attr('src','../img/parfet.jpg'),
+			$('.worktitle').html("模写作品"),
+			$('.worksentence').html("写真模写です。写真模写は無心になれるので息抜きになります。質感を描写するのが好きです。");
+		});
+	</script>
+	<script>
+		$('.fift').click(function(){
+			$('.workfir').children('img').attr('src','../img/calender.jpg'),
+			$('.popupleft').append($
+			  ('<p class="workbox swiper-slide worksec"><img src="../img/calender2.jpg" alt="lachic" class="workimg"></p>')),
+			$('.worktitle').html("お風呂カレンダー"),
+			$('.worksentence').html("お風呂に入るのが苦手な子供のために作りました。日付の部分があひるのシールになっていて、お風呂に入った日にシールを上の海に貼れるようになっています。子供が自分で自由につかっていい「スペシャルシール」（中央右）も用意しました。お風呂掃除をした日はスペシャルシールを貼るなど、自分で計画を立てる練習にしてほしいと思います。");
+			$('.workbox img').addClass('wide');
+		});
+	</script>
+	<script>
+		$('.sixt').click(function(){
+			$('.workfir').children('img').attr('src','../img/lachic.jpg'),
+			$('.popupleft').append($
+			  ('<p class="workbox swiper-slide worksec"><img src="../img/lachicleft.jpg" alt="lachic" class="workimg"></p>')),
+			$('.popupleft').append($
+			  ('<p class="workbox swiper-slide worksec"><img src="../img/lachicright.jpg" alt="lachic" class="workimg"></p>')),
+			$('.worktitle').html("LACHIC ジュラシックセール ポスター"),
+			$('.worksentence').html("LACHIC（30代～50代向けショッピングモール）のセールのポスターです。LACHICの広告は遊び心のあるものが多いので、コピーの「ハツウリ」を180度回転しても読めるようにしました。"),
+			$('.workbox img').addClass('wide');
+		});
+	</script>
+	<script>
+		$('.fiv').click(function(){
+			$('.workfir').children('img').attr('src','../img/childland.jpg'),
+			$('.popupleft').append($
+			  ('<p class="workbox swiper-slide worksec"><img src="../img/childland3.jpg" alt="lachic" class="workimg"></p>')),
+			$('.worktitle').html("「ちゃいるどらんど」ロゴデザイン"),
+			$('.worksentence').html("架空の親子向け総合施設「ちゃいるどらんど」のロゴデザインを作りました。子供が見たときにワクワクするような、親が見たときは安心して子供を連れてこられるような配色にしました。");
+		});
+	</script>
+	<script>
+		$('.six').click(function(){
+			$('.workfir').children('img').attr('src','../img/potato.jpg'),
+			$('.worktitle').html("ポテトの写真"),
+			$('.worksentence').html("コメダ珈琲で食べたポテトの写真です。食べ物の写真をおいしそうに撮るのが好きです。");
+		});
+	</script>
+	<script>
+		$('.sev').click(function(){
+			$('.workfir').children('img').attr('src','../img/park.jpg'),
+			$('.worktitle').html("公園の遊具の写真"),
+			$('.worksentence').html("散歩で行った公園の遊具の写真です。写真を撮ることも好きですが、lightloomで編集するのも好きです。空気の冷たい感じや、	遊具の細かい傷がいいアクセントになったのでお気に入りです。"),
+			$('.workbox img').addClass('wide');
+		});
+	</script>
+	<script>
+			$('.close').click(function(){
+				$('.workbox img').removeClass('wide'),
+				$('.worksec').remove();
+				$('.right,.left').css('filter','blur()');
+			});
+
+	</script>
+	<script>
+		$('.popup').hide();
+		
+		$('.work-sumb').click(function(){
+			$('.popup').show();
+			$('.right,.left').css('filter','blur(1.5em)');
+		});
+		$('.close').click(function(){
+			$('.popup').hide();
+		});
+	</script>
+	<script>
+		let mySwiper = new Swiper('.swiper-container', {
+			navigation: {  //ナビゲーションのオプション（矢印ボタンの要素を指定）
+			  nextEl: '.swiper-button-next',
+			  prevEl: '.swiper-button-prev',
+				},
+			
+		  pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+			  },
+			loop: false, //最後に達したら先頭に戻る
+			centeredSlides: true,
+			touchRatio: 2,
+			grabCursor: true,
+			slidesPerView: 'auto',
+			centeredSlides: true,
+			spaceBetween: 30,
+
+			});	
+	</script>
+	<script>
+	
+	</script>
+	</body>
+</html>
