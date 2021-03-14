@@ -3,14 +3,14 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'Noto Serif JP', serif;
+	font-family: 'Noto Sans JP', sans-serif;	
 	box-sizing: border-box;
 	z-index: 2;
 }
 @media screen and (max-width:480px) {
 	p{
 		
-	font-size: 0.8em;
+	font-size: 0.9em;
 	}
 }
 li{
@@ -18,6 +18,11 @@ li{
 }
 a{
 	text-decoration: none;
+}
+img {
+max-width: 100%;
+height: auto;
+width /***/:auto;
 }
 ::-webkit-scrollbar{
 	width: 0.5em;
@@ -36,6 +41,7 @@ a{
 	filter: blur(1.5em);
     transition-timing-function: ease-in-out;
     opacity: 0;
+	overflow: hidden;
 }
 .farstin{
 	transform: scale(1);
@@ -45,25 +51,27 @@ a{
 .start p img{
 	width: 3%;
 }
-.left,.box{
-	background: #FBFBFB;
-}
 .right{
 	width: 100%;
-	background: #FBFBFB;
+	background: #f6f4f4;
 	overflow: auto;
 }
 .left,.right{
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
     height: 100vh;
 }
 .left{
 	width: 40%;
-	padding: 2em;
 }
-
+.leftcontent{
+	padding: 2em;
+	background: #f6f4f4;
+	display: flex;
+	flex-flow: column;
+    justify-content: space-around;
+	height: 100%;
+}
 .slide {
     margin: 0 auto;
     width: 100%;
@@ -73,13 +81,15 @@ a{
 }
 .box {
 	height: 100%;
-	width: 100%;
+	width: 95%;
     display: flex;
+	flex-flow: column;
     justify-content: space-around;
 	flex-wrap: wrap;
+	margin: 0 auto;
 }
 .start{
-	background: #fff;
+	background: #1a0203;
 	background-size: cover;
 	z-index: 2;
 	padding: 100%;
@@ -95,11 +105,13 @@ a{
 }
 .mylogo {
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+	background: #1a0203;
+	padding: 10% 20%;
 }
-.aboutme_box{
-	padding: 2em 0;
+.mylogo img{
+width: 56%;	
 }
 .me {
     padding-bottom: 1em;
@@ -108,11 +120,11 @@ a{
 }
 
 li a {
-    color: #000;
+    color: #1a0203;
 	font-weight: 900;
 }
 .aboutme {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 	display: flex;
 	flex-flow: column;
@@ -124,7 +136,11 @@ li a {
 }
 .wanttodo, .itsme,.more a,.mail {
     font-size: 0.8em;
-    color: #999;
+    color: #1a0203;
+}
+.wanttodo_title{
+    width: 60%;
+    margin: 0 auto;
 }
 .more{
 	text-align: right;
@@ -135,9 +151,6 @@ li a {
 	padding-top: 2em;
 }
 @media screen and (max-width: 1366px){
-	.mylogo{
-		width: 50%;
-	}
 	.aboutme{
 		width: 80%;
 	}
@@ -155,14 +168,18 @@ li a {
     width: 25%;
 	cursor: pointer;
 	height: fit-content;
+	overflow: hidden;
+	border-radius: 100%;
+	vertical-align: middle;
 }
 .work-sumb img {
     width: 100%;
+	transition-duration: 0.2s;
 }
-.work-sumb :hover img {
-	transition: 0.3s;
-	transform: scale(0.95, 0.95);
-
+.work-sumb img:hover {
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
 }
 .popup{
 	transition: 0.5s;
@@ -190,17 +207,27 @@ li a {
 
 .close{
 	cursor: pointer;
-	transition: 0.3s;
 	position: absolute;
-	width: 1.2%;
+	width: 4%;
 	right: 0;
 	top: 0;
-	margin: 2em;
+	margin: 1%;
+	padding: 1%;
+	background: #1a0203;
+	transition: 0.3s;
 }
-
+.close img{
+	transition: 0.3s;
+}
 .close:hover{
-	opacity: 0.5;
-	transform: rotate(180deg)
+	border-radius: 100%;
+	transition: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+.close img:hover{
+	transform: rotate(180deg);
+	transition: 0.3s;
+	transition-timing-function: ease-in-out;
 }
 .popupflex{
 	display: flex;
